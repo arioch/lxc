@@ -241,7 +241,7 @@ class LXC
     #
     # @see lxc-attach
     def attach(*args)
-      self.exec("lxc-attach", *args)
+      self.exec("lxc-attach", "--", *args)
     end
 
     # Bootstrap a container
